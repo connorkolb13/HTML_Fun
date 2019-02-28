@@ -1,0 +1,28 @@
+body
+{
+    font-size: 30;
+}
+
+@keyframes testanimate
+{
+    from {background-image: url("images/jacob.jpg");}
+    to {background-image: url("images/blobfish.jpg");}
+}
+
+@-webkit-keyframes testanimate
+{
+    from {background-image: url("images/jacob.jpg");}
+    to {background-image: url("images/blobfish.jpg");}
+}
+
+#myDiv
+{
+    width: 500x;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url("images/jacob.jpg");
+    -webkit-animation-name: testanimate;
+    -webkit-animation-duration: 10s;
+    animation-name: testanimate;
+    animation-duration: 10s;
+}
