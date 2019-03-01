@@ -5,14 +5,16 @@ body
 
 @keyframes testanimate
 {
-    from {background-image: url("images/jacob.jpg");}
-    to {background-image: url("images/blobfish.jpg");}
+    0% {background-image: url("images/jacob.jpg");}
+    50% {background-image: url("images/surprise.jpg");}
+    100% {background-image: url("images/blobfish.jpg");}
 }
 
 @-webkit-keyframes testanimate
 {
-    from {background-image: url("images/jacob.jpg");}
-    to {background-image: url("images/blobfish.jpg");}
+    0% {background-image: url("images/jacob.jpg");}
+    50% {background-image: url("images/surprise.jpg");}
+    100% {background-image: url("images/blobfish.jpg");}
 }
 
 #myDiv
@@ -23,6 +25,12 @@ body
     background-image: url("images/jacob.jpg");
     -webkit-animation-name: testanimate;
     -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
     animation-name: testanimate;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
